@@ -1,9 +1,11 @@
-import Wrapper from "../components/Wrapper";
+import Wrapper from '../components/Wrapper';
 
 const Default = () => {
   return (
-    <Wrapper>
-        <h1>Something</h1>
+    <Wrapper title={'a box'} bgcolor={'bg-slate-100'}  txtbgcolor={'bg-slate-200'}>
+      <div className='w-[200px] h-[250px] bg-red-100 rounded-lg'>
+
+      </div>
     </Wrapper>
   )
 }
