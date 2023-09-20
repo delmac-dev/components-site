@@ -4,6 +4,7 @@ import InstagramCard_1 from "./designs/InstagramCard_1";
 import Circle_Loader_1 from "./designs/Circle_Loader_1";
 import Circle_Loader_2 from "./designs/Circle_Loader_2";
 import Circle_Loader_3 from "./designs/Circle_Loader_3";
+import Card_1 from "./designs/Card_1";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Circle_Loader_1 />
       <Circle_Loader_2 />
       <Circle_Loader_3 />
+      <Card_1 />
     </main>
   )
 }
