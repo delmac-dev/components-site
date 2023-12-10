@@ -9,6 +9,8 @@ import Card_2 from "./designs/Card_2";
 import Card_3 from "./designs/Card_3";
 import NavBar_1 from "./designs/NavBar_1";
 
+import { useEffect, useState } from 'react';
+
 function App() {
 
   return (
