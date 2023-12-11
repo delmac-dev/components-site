@@ -4,7 +4,7 @@ import MockupImg from "../asserts/mockup_img.png";
 
 const Card_2 = () => {
     return (
-        <Wrapper title={'card two'} bgcolor={'bg-gray-600'}  txtbgcolor={'bg-slate-200'}>
+        <Wrapper title={'card two'} bgcolor={'bg-gray-600'}  txtcolor={'bg-slate-200'}>
            <div className='flex flex-col bg-transparent gap-3'>
                 <div className='flex justify-center items-center h-52 w-[350px] rounded-md bg-gray-500 overflow-hidden'>
                     <img src={MockupImg} alt="img" className='h-52 w-[350px] object-cover' />

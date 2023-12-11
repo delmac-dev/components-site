@@ -2,7 +2,7 @@ import Wrapper from '../components/Wrapper';
 
 const Card_1 = () => {
     return (
-        <Wrapper title={'card one'} bgcolor={'bg-slate-300'}  txtbgcolor={'bg-slate-200'}>
+        <Wrapper title={'card one'} bgcolor={'bg-slate-300'}  txtcolor={'bg-slate-200'}>
             <div className='bg-gray-600 w-64 h-40 overflow-hidden rounded-md border-l-8 border-blue-500'>
                 <div className='w-full h-full p-5 flex justify-between flex-col items-start'>
                     <div>

@@ -2,7 +2,7 @@ import Wrapper from '../components/Wrapper';
 
 const Discord_Card_1 = () => {
     return (
-        <Wrapper title={'discord card one'} bgcolor={'bg-slate-300'}  txtbgcolor={'bg-slate-200'}>
+        <Wrapper title={'discord card one'} bgcolor={'bg-slate-300'}  txtcolor={'bg-slate-200'}>
             <div className='w-[300px] h-[70px] bg-slate-100 rounded-xl overflow-hidden border-l-4 border-blue-400 py-3 px-4 flex flex-col gap-2 cursor-default'>
                 <div className='flex flex-row gap-3 items-center justify-start'>
                     <div className='w-5 h-5 rounded-full bg-slate-400'></div>
