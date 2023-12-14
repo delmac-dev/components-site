@@ -9,18 +9,16 @@ const Star_Rating = () => {
 
   return (
     <Wrapper title={"Star Trick"}>
-        {/* button */}
         <button onClick={() => setOpen(true)} className="absolute z-10 px-3 py-2 rounded-md bg-accent text-accent-foreground flex items-center gap-3 hover:bg-accent/80">
           Feedback
           <FaArrowRightLong />
         </button>
-        {/* modal */}
         <div className={`relative ${open ? "z-20 opacity-100 scale-1" : "z-0 opacity-0 scale-0"} max-w-md bg-card text-card-foreground border border-border w-full p-8 h-[27rem] rounded-lg shadow flex flex-col items-center transition-all ease-in duration-100`}>
           <button onClick={() => setOpen(false)} className="absolute right-4 top-4 p-0.5 rounded-sm text-foreground/50 hover:text-foreground">
             <IoMdClose size={24} />
           </button>
           <h2 className="relative text-4xl mt-7">Rate your experience</h2>
-          <p class="text-lg mt-4 w-3/4 text-center text-foreground/50">We love to know your opinion! How satisfied were you with us.</p>
+          <p className="text-lg mt-4 w-3/4 text-center text-foreground/50">We love to know your opinion! How satisfied were you with us.</p>
           <div className="rating relative flex w-full h-20 top-8 justify-center items-center flex-row-reverse rounded-md gap-5">
             {starArray.map((_, index) => (
               <Star key={index} index={starArray.length - index} />
