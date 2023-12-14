@@ -25,11 +25,13 @@ import SkeletonDesign from "./designs/SkeletonDesign";
 import CommandDesign from "./designs/CommandDesign";
 import TooltipDesign from "./designs/TooltipDesign";
 import SwitchDesign from "./designs/SwitchDesign";
+import TableDesign from "./designs/TableDesign";
 
 function App() {
 
   return (
     <main className="w-full min-h-screen grid grid-cols-1">
+      <TableDesign />
       <Star_Rating />
       {/* <NavigationDesign /> */}
       <Colors />
