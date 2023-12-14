@@ -20,6 +20,8 @@ import { Toaster } from "@/components/ui/toaster"
 import NavigationDesign from "./designs/NavigationDesign";
 import Star_Rating from "./designs/Star_Rating";
 import Colors from "./designs/Colors";
+import DialogDesign from "./designs/DialogDesign";
+import SkeletonDesign from "./designs/SkeletonDesign";
 
 function App() {
 
@@ -28,6 +30,8 @@ function App() {
       <Star_Rating />
       {/* <NavigationDesign /> */}
       <Colors />
+      <SkeletonDesign />
+      <DialogDesign />
       <ToastDesign />
       <DropdownMenuDesign_3 />
       <DropdownMenuDesign_2 />

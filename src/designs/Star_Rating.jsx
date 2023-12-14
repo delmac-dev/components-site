@@ -16,7 +16,7 @@ const Star_Rating = () => {
         </button>
         {/* modal */}
         <div className={`relative ${open ? "z-20 opacity-100 scale-1" : "z-0 opacity-0 scale-0"} max-w-md bg-card text-card-foreground border border-border w-full p-8 h-[27rem] rounded-lg shadow flex flex-col items-center transition-all ease-in duration-100`}>
-          <button onClick={() => setOpen(false)} className="absolute right-4 top-4 p-0.5 rounded-sm">
+          <button onClick={() => setOpen(false)} className="absolute right-4 top-4 p-0.5 rounded-sm text-foreground/50 hover:text-foreground">
             <IoMdClose size={24} />
           </button>
           <h2 className="relative text-4xl mt-7">Rate your experience</h2>
