@@ -24,6 +24,7 @@ import DialogDesign from "./designs/DialogDesign";
 import SkeletonDesign from "./designs/SkeletonDesign";
 import CommandDesign from "./designs/CommandDesign";
 import TooltipDesign from "./designs/TooltipDesign";
+import SwitchDesign from "./designs/SwitchDesign";
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
       {/* <NavigationDesign /> */}
       <Colors />
       <TooltipDesign />
+      <SwitchDesign />
       <CommandDesign />
       <SkeletonDesign />
       <DialogDesign />
