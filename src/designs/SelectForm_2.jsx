@@ -11,7 +11,7 @@ import {
 
 const SelectForm_2 = () => {
   return (
-    <Wrapper title={"Select Shadcn UI"} bgcolor={"bg-neutral-50"}>
+    <Wrapper title={"Select Shadcn UI"}>
         <Select>
             <SelectTrigger className="w-[280px]">
                 <SelectValue placeholder="Select a timezone" />

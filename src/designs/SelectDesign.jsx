@@ -12,7 +12,7 @@ import {
 
 const SelectDesign = () => {
     return (
-        <Wrapper title={"Form Design"} bgcolor={"bg-neutral-50"}>
+        <Wrapper title={"Form Design"}>
             <Select>
                 <SelectTrigger className="w-[180px]">
                     <SelectValue placeholder="Select a fruit" />

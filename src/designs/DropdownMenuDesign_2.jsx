@@ -15,7 +15,7 @@ const DropdownMenuDesign_2 = () => {
     const [position, setPosition] = useState("bottom")
 
     return (
-        <Wrapper title={"Dropdown Radio Shadcn UI"} bgcolor={"bg-neutral-50"}>
+        <Wrapper title={"Dropdown Radio Shadcn UI"}>
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                     <Button variant="outline">Open</Button>

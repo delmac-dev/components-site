@@ -7,7 +7,7 @@ const FormCalender = () => {
 
 
   return (
-    <Wrapper title={"Calender Shadcn UI"} bgcolor={"bg-neutral-50"}>
+    <Wrapper title={"Calender Shadcn UI"}>
       <Calendar
         mode="single"
         selected={date}

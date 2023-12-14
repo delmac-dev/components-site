@@ -16,7 +16,7 @@ const DropdownMenuDesign = () => {
     const [showPanel, setShowPanel] = useState(false)
 
     return (
-        <Wrapper title={"Dropdown Checkbox Shadcn UI"} bgcolor={"bg-neutral-50"}>
+        <Wrapper title={"Dropdown Checkbox Shadcn UI"}>
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                     <Button variant="outline">Open</Button>

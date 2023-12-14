@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import Wrapper from "../components/Wrapper";
-import { BiLogIn } from "react-icons/bi";
+import { AiOutlineDelete, AiOutlinePlus } from "react-icons/ai";
 
 const data = [
     {
@@ -29,9 +29,20 @@ const FormDesign = () => {
         snippet: ''
     });
 
-    useEffect(() => {
-        console.log(active);
-    }, [active]);
+    const handleAdd = () => {
+        setFormList([newData, ...formList]);
+        setNewData({
+            title: '',
+            language: '',
+            snippet: ''
+        })
+    };
+
+    const hamdleDelete = (index) => {
+        let newList = formList.filter((d, _i) => _i !== index);
+        if (active === index) setActive(index-1 !== -1 ? index - 1 : null);
+        setFormList(newList);
+    }
 
 
     return (
@@ -50,14 +61,19 @@ const FormDesign = () => {
                                 handleActive={()=> setActive(null)}
                             />
                             
-                            <Button />
+                            <Button
+                                handleClick = {handleAdd}
+                                disabled = {newData.title === ''}
+                            >
+                                <AiOutlinePlus size={14} />
+                            </Button>
                         </div>
                         {formList.map((item, index) => (
                             <div key={index} className="group h-full min-w-[140px] p-1 w-[140px] flex gap-2 items-center justify-start relative">
                                 <Input  
                                     label={"title"}
                                     value={item.title} 
-                                    setValue={(text) => {
+                                    setValue={(text) => {``
                                         let updated = item;
                                         updated.title = text;
                                         setFormList((d) => d.map((_d, i)=> i === index ? _d = updated : _d ))
@@ -65,7 +81,11 @@ const FormDesign = () => {
                                     handleActive = {()=> setActive(index)}
                                 />
 
-                                <Button />
+                                <Button
+                                    handleClick={() => hamdleDelete(index)}
+                                >
+                                    <AiOutlineDelete size={16} />
+                                </Button>
                             </div>
                         ))}
                     </div>
@@ -92,7 +112,7 @@ const FormDesign = () => {
                                         setValue={(text) => {
                                             let updated = formList[active];
                                             updated.language = text;
-                                            setFormList((d) => d.map((_d, i)=> i === index ? _d = updated : _d ))
+                                            setFormList((d) => d.map((_d, i)=> i === active ? _d = updated : _d ))
                                         }} 
                                     />
                                     <TextArea 
@@ -139,14 +159,14 @@ const TextArea = ({value, setValue}) => {
             value={value} 
             placeholder="Enter snippet"
             onChange={(e) => setValue(e.target.value)} 
-            className="w-full h-full text-neutral-300 border-0 bg-neutral-800 rounded-md px-3 py-2 outline-none text-sm"
+            className="w-full h-full text-neutral-300 border-0 bg-neutral-800 rounded-md px-3 py-2 outline-none text-sm scrollbar-thin scrollbar-thumb-neutral-700 scrollbar-track-neutral-900"
         />
     )
 };
 
-const Button = ({children}) => {
+const Button = ({children, handleClick, disabled}) => {
     return (
-        <button className="aspect-square w-6 rounded-sm bg-neutral-700 hover:bg-neutral-700/70 absolute top-1/2 -translate-y-1/2 right-2 hidden group-hover:block">
+        <button onClick={handleClick} disabled= {disabled} className="aspect-square w-6 items-center justify-center rounded-sm text-neutral-300 hover:bg-neutral-700/70 absolute top-1/2 -translate-y-1/2 right-2 hidden group-hover:flex group-focus-within:flex transition-all duration-300">
             {children}
         </button>
     )

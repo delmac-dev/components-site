@@ -14,13 +14,18 @@ import FormCalender from "./designs/FormCalender";
 import PopoverDesign from "./designs/PopoverDesign";
 import DropdownMenuDesign from "./designs/DropdownMenuDesign";
 import DropdownMenuDesign_2 from "./designs/DropdownMenuDesign_2";
+import DropdownMenuDesign_3 from "./designs/DropdownMenuDesign_3";
 import ToastDesign from "./designs/ToastDesign";
+import { Toaster } from "@/components/ui/toaster"
+import NavigationDesign from "./designs/NavigationDesign";
 
 function App() {
 
   return (
     <main className="w-full min-h-screen grid grid-cols-1">
+      {/* <NavigationDesign /> */}
       <ToastDesign />
+      <DropdownMenuDesign_3 />
       <DropdownMenuDesign_2 />
       <DropdownMenuDesign />
       <PopoverDesign />
@@ -28,7 +33,7 @@ function App() {
       <SelectForm_2 />
       <SelectDesign/>
       <FormDesign />
-      <Discord_Card_1 />
+      {/* <Discord_Card_1 />
       <InstagramCard_1 />
       <Circle_Loader_1 />
       <Circle_Loader_2 />
@@ -36,7 +41,8 @@ function App() {
       <Card_1 />
       <Card_2 />
       <Card_3 />
-      <NavBar_1 />
+      <NavBar_1 /> */}
+      <Toaster />
     </main>
   )
 }

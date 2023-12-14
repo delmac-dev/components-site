@@ -6,9 +6,8 @@ import Wrapper from "../components/Wrapper"
 const ToastDesign = () => {
     const { toast } = useToast()
 
-
   return (
-    <Wrapper title={"Toast Shadcn UI"} bgcolor={"bg-neutral-50"}>
+    <Wrapper title={"Toast Shadcn UI"} bgcolor={"bg-background"}>
         <Button
             variant="outline"
             onClick={() => {
@@ -16,7 +15,11 @@ const ToastDesign = () => {
                 title: "Scheduled: Catch up ",
                 description: "Friday, February 10, 2023 at 5:57 PM",
                 action: (
-                    <ToastAction altText="Goto schedule to undo">Undo</ToastAction>
+                    <>
+                        <ToastAction altText="Goto schedule to undo">
+                            <Hi />
+                        </ToastAction>
+                    </>
                 ),
                 })
             }}
@@ -27,5 +30,9 @@ const ToastDesign = () => {
 
   )
 }
+
+const Hi = () => (
+    <h1>hi</h1>
+)
 
 export default ToastDesign

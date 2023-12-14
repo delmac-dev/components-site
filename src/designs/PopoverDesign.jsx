@@ -10,7 +10,7 @@ import Wrapper from "../components/Wrapper"
 
 const PopoverDesign = () => {
   return (
-    <Wrapper title={"Popover Shadcn UI"} bgcolor={"bg-neutral-50"}>
+    <Wrapper title={"Popover Shadcn UI"}>
         <Popover>
         <PopoverTrigger asChild>
             <Button variant="outline">Open popover</Button>
