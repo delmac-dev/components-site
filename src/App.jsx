@@ -23,6 +23,7 @@ import Colors from "./designs/Colors";
 import DialogDesign from "./designs/DialogDesign";
 import SkeletonDesign from "./designs/SkeletonDesign";
 import CommandDesign from "./designs/CommandDesign";
+import TooltipDesign from "./designs/TooltipDesign";
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
       <Star_Rating />
       {/* <NavigationDesign /> */}
       <Colors />
+      <TooltipDesign />
       <CommandDesign />
       <SkeletonDesign />
       <DialogDesign />
