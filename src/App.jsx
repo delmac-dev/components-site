@@ -12,11 +12,17 @@ import SelectDesign from "./designs/SelectDesign";
 import SelectForm_2 from "./designs/SelectForm_2";
 import FormCalender from "./designs/FormCalender";
 import PopoverDesign from "./designs/PopoverDesign";
+import DropdownMenuDesign from "./designs/DropdownMenuDesign";
+import DropdownMenuDesign_2 from "./designs/DropdownMenuDesign_2";
+import ToastDesign from "./designs/ToastDesign";
 
 function App() {
 
   return (
     <main className="w-full min-h-screen grid grid-cols-1">
+      <ToastDesign />
+      <DropdownMenuDesign_2 />
+      <DropdownMenuDesign />
       <PopoverDesign />
       <FormCalender />
       <SelectForm_2 />
