@@ -53,9 +53,8 @@ const FormDesign = () => {
                             <Button />
                         </div>
                         {formList.map((item, index) => (
-                            <div className="group h-full min-w-[140px] p-1 w-[140px] flex gap-2 items-center justify-start relative">
-                                <Input 
-                                    key={index} 
+                            <div key={index} className="group h-full min-w-[140px] p-1 w-[140px] flex gap-2 items-center justify-start relative">
+                                <Input  
                                     label={"title"}
                                     value={item.title} 
                                     setValue={(text) => {
