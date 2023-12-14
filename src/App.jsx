@@ -18,12 +18,16 @@ import DropdownMenuDesign_3 from "./designs/DropdownMenuDesign_3";
 import ToastDesign from "./designs/ToastDesign";
 import { Toaster } from "@/components/ui/toaster"
 import NavigationDesign from "./designs/NavigationDesign";
+import Star_Rating from "./designs/Star_Rating";
+import Colors from "./designs/Colors";
 
 function App() {
 
   return (
     <main className="w-full min-h-screen grid grid-cols-1">
+      <Star_Rating />
       {/* <NavigationDesign /> */}
+      <Colors />
       <ToastDesign />
       <DropdownMenuDesign_3 />
       <DropdownMenuDesign_2 />
