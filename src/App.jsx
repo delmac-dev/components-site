@@ -26,11 +26,15 @@ import CommandDesign from "./designs/CommandDesign";
 import TooltipDesign from "./designs/TooltipDesign";
 import SwitchDesign from "./designs/SwitchDesign";
 import TableDesign from "./designs/TableDesign";
+import Directory from "./designs/Directory";
+import Contribution from "./designs/Contribution";
 
 function App() {
 
   return (
     <main className="w-full min-h-screen grid grid-cols-1">
+      <Contribution />
+      <Directory />
       <TableDesign />
       <Star_Rating />
       {/* <NavigationDesign /> */}
