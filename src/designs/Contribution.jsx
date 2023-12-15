@@ -81,11 +81,11 @@ const Card = () => {
             </div>
             <div className="w-full min-h-full p-5">
                 <div className="w-full mb-4">
-                    <label htmlFor="school" className='block mb-3 text-card-foreground/50'>School Name</label>
+                    <label htmlFor="school" className='block mb-3 text-card-foreground/80'>School Name</label>
                     <Input id="school" type="text" className="w-3/4" />
                 </div>
                 <div className="w-full mb-4">
-                    <label htmlFor="motto" className='block mb-3 text-card-foreground/50'>Motto</label>
+                    <label htmlFor="motto" className='block mb-3 text-card-foreground/80'>Motto</label>
                     <Input id="motto" type="text" className="w-3/4" />
                 </div>
             </div>
