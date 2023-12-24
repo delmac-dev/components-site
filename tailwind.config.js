@@ -8,6 +8,9 @@ module.exports = {
     './src/**/*.{ts,tsx,js,jsx}',
 	],
   theme: {
+    fontFamily: {
+      "comic-sans-ms" : ["Comic Sans MS"]
+    },
     container: {
       center: true,
       padding: "2rem",

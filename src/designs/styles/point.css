@@ -1,0 +1,19 @@
+.shd {
+    text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+}
+
+.shd2 {
+    box-shadow: inset 8px 8px 15px rgba(0, 0, 0, 0.1),
+                inset -8px -8px 15px rgba(255, 255, 255, 0.2)
+}
+
+.before_custom::before {
+    position: absolute;
+    content: "";
+    left: -20%;
+    top: -20%;
+    aspect-ratio: 1/1;
+    width: 120%;
+    border-radius: 50%;
+    background-color: white;
+}

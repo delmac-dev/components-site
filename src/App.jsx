@@ -28,11 +28,13 @@ import SwitchDesign from "./designs/SwitchDesign";
 import TableDesign from "./designs/TableDesign";
 import Directory from "./designs/Directory";
 import Contribution from "./designs/Contribution";
+import RadioPoint from "./designs/RadioPoint";
 
 function App() {
 
   return (
     <main className="w-full min-h-screen grid grid-cols-1">
+      <RadioPoint />
       <Contribution />
       <Directory />
       <TableDesign />
