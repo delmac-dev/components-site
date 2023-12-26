@@ -6,7 +6,7 @@ const RadioPoint = () => {
     <Wrapper title={"Radio Point"}>
         <div className="flex gap-12 flex-col">
             {/* Point one */}
-            <div className="shd2 aspect-square rounded-full w-8 bg-secondary cursor-pointer relative before-custom border-white border-2"></div>
+            <div className="shd2 aspect-square rounded-full w-8 bg-secondary cursor-pointer relative"></div>
 
         </div>
     </Wrapper>
