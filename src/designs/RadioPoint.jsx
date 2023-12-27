@@ -18,9 +18,9 @@ export default RadioPoint;
 
 const Point = ({active}) => {
   return (
-    <div className="shd rounded-full w-11 bg-secondary aspect-square flex items-center justify-center">
+    <div className="shd rounded-full w-10 bg-primary aspect-square flex items-center justify-center">
       <div className="shd2 rounded-full w-8 aspect-square bg-secondary/80 cursor-pointer flex items-center justify-center">
-        {active ? <div className="bg-primary/80 shd3 aspect-square w-5 rounded-full" /> : ''}
+        {active ? <div className="bg-primary shd3 aspect-square w-5 rounded-full" /> : ''}
       </div>
     </div>
   )
