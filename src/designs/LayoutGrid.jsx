@@ -29,14 +29,25 @@ const GridContainer = ({children}) => {
 
     useEffect(() => {
         const calculateGrid = () => {
-            setColumns(Math.floor(containerRef?.current?.clientWidth / 50) | 0);
-            setRows(Math.floor(containerRef?.current?.clientHeight / 50) | 0);
+          setColumns(Math.floor(containerRef?.current?.clientWidth / 50) || 0);
+          setRows(Math.floor(containerRef?.current?.clientHeight / 50) || 0);
         };
-
-        containerRef?.current?.addEventListener("resize", calculateGrid)
-
+    
+        // Attach the resize event listener to the window
+        const handleResize = () => {
+          calculateGrid();
+        };
+    
+        window.addEventListener("resize", handleResize);
+    
+        // Initial calculation
         calculateGrid();
-    }, [containerRef]);
+    
+        // Clean up the event listener on unmount
+        return () => {
+          window.removeEventListener("resize", handleResize);
+        };
+      }, [containerRef]);
         
     useEffect(() => {
         setTiles(createTiles(columns, rows));
@@ -90,7 +101,7 @@ const GridContainer = ({children}) => {
         <LayoutContext.Provider value={contextValue}>
             <div 
                 ref={containerRef}
-                className="relative h-96 w-full max-w-3xl grid bg-primary/80"
+                className="relative h-96 lg:h-[420px] w-full max-w-3xl grid bg-primary/80"
                 style={{
                     gridTemplateColumns: `repeat(${columns}, 1fr)`,
                     gridTemplateRows: `repeat(${rows}, 1fr)`
