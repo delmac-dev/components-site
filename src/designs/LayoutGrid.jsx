@@ -90,7 +90,7 @@ const GridContainer = ({children}) => {
         <LayoutContext.Provider value={contextValue}>
             <div 
                 ref={containerRef}
-                className="relative h-96 w-full max-w-3xl grid bg-red-500"
+                className="relative h-96 w-full max-w-3xl grid bg-red-500/40"
                 style={{
                     gridTemplateColumns: `repeat(${columns}, 1fr)`,
                     gridTemplateRows: `repeat(${rows}, 1fr)`
@@ -171,7 +171,7 @@ const Tile = ({id, ys, xs, xPos, yPos, center, position, yOffset, children}) => 
 )};
 
 const AutoTile = ({xPos, yPos}) => {
-    
+
     return (
     <div
         className='relative'
