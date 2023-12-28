@@ -29,11 +29,15 @@ import TableDesign from "./designs/TableDesign";
 import Directory from "./designs/Directory";
 import Contribution from "./designs/Contribution";
 import RadioPoint from "./designs/RadioPoint";
+import AnimatedGrid from "./designs/AnimatedGrid";
+import LayoutGrid from "./designs/LayoutGrid";
 
 function App() {
 
   return (
     <main className="w-full min-h-screen grid grid-cols-1">
+      <LayoutGrid />
+      <AnimatedGrid />
       <RadioPoint />
       <Contribution />
       <Directory />
@@ -41,7 +45,7 @@ function App() {
       <Star_Rating />
       {/* <NavigationDesign /> */}
       <Colors />
-      <TooltipDesign />
+      {/* <TooltipDesign />
       <SwitchDesign />
       <CommandDesign />
       <SkeletonDesign />
@@ -54,7 +58,7 @@ function App() {
       <FormCalender />
       <SelectForm_2 />
       <SelectDesign/>
-      <FormDesign />
+      <FormDesign /> */}
       {/* <Discord_Card_1 />
       <InstagramCard_1 />
       <Circle_Loader_1 />
