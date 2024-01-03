@@ -5,7 +5,7 @@ import { LayoutContext, useLayoutContext } from '../../hooks/context';
 import { useMediaState } from '../../hooks/useMediaState';
 
 const LayoutGrid = () => (
-    <Wrapper title={"Layout Grid"}>
+    <Wrapper title={"Layout Grid"} bgcolor={"dark"}>
         <GridContainer>
             <Tile id={2} xPos={"4"} yPos={"3"} xs={"9"} ys={"4"} >
                 <div className="w-full h-full flex items-center justify-center flex-col">
@@ -101,7 +101,7 @@ const GridContainer = ({children}) => {
         <LayoutContext.Provider value={contextValue}>
             <div 
                 ref={containerRef}
-                className="relative h-96 lg:h-[420px] w-full max-w-3xl grid bg-primary/80"
+                className="relative h-96 lg:h-[420px] w-full max-w-3xl grid grid_bg"
                 style={{
                     gridTemplateColumns: `repeat(${columns}, 1fr)`,
                     gridTemplateRows: `repeat(${rows}, 1fr)`
@@ -174,7 +174,7 @@ const Tile = ({id, ys, xs, xPos, yPos, center, position, yOffset, children}) => 
                     gridArea: `${tile.yPos} / ${tile.xPos} / ${tile.ySpan + tile.yPos} / ${tile.xSpan + tile.xPos}`
                 }}
             >
-                <div className="absolute inset-[1px] bg-secondary flex items-center justify-center">
+                <div className="absolute inset-[1px] bg-secondary/40 flex items-center rounded-lg justify-center border border-primary/80 backdrop-blur-md">
                     {children}
                 </div>
             </div>)}
@@ -190,7 +190,7 @@ const AutoTile = ({xPos, yPos}) => {
             gridArea: `${yPos} / ${xPos}`
         }}
     >
-        <div className="absolute inset-[1px] bg-secondary" />
+        <div className="absolute inset-[5px] rounded-lg bg-secondary/80" />
     </div>
 )};
 

@@ -59,4 +59,12 @@
   body {
     @apply bg-background text-foreground scrollbar-none;
   }
+
+  .grid_bg{
+    background-color: hsl(var(--secondary));
+    background-image: 
+    radial-gradient(at 24% 67%,rgb(253, 217, 58) 0px,transparent 40%),
+    radial-gradient(at 74% 89%,rgb(253, 58, 149) 0px,transparent 27%),
+    radial-gradient(circle at 50% 50%, hsla(var(--primary)) 0px, transparent 90%);
+  }
 }
